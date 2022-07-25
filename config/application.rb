@@ -8,6 +8,9 @@ Bundler.require(*Rails.groups)
 
 module Tracktimer
   class Application < Rails::Application
+    config.generators do |g|
+      g.template_engine :slim
+    end
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 

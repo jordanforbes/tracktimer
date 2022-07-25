@@ -51,6 +51,12 @@ gem 'bootstrap', '~> 5.2.0'
 # Use Sass to process CSS
 gem "sassc-rails"
 
+# better and more descriptive error pages
+gem 'better_errors', '~> 2.9', '>= 2.9.1'
+
+#ruby focused templating engine
+gem 'slim-rails'
+
 #provides fake data for testing purposes
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 
