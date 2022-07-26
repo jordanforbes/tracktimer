@@ -21,6 +21,8 @@ gem "importmap-rails"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
+gem "turbolinks"
+
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
@@ -37,9 +39,11 @@ gem "jbuilder"
 # gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-# gem "tzinfo-data", platforms:[ mingw mswin x64_mingw jruby ]
+# gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 #for some reason this is wrong on my computer. You have to get rid of the platforms. I don't know why.
 gem "tzinfo-data"
+
+gem 'coffee-script-source', '~> 1.11', '>= 1.11.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
@@ -47,6 +51,8 @@ gem "bootsnap", require: false
 # Bootstrap 5 ruby gem for Ruby on Rails (Sprockets) and Hanami (formerly Lotus).
 gem 'bootstrap', '~> 5.2.0'
 
+# material style templates instead of bootstrap. integrated with sass.
+# gem 'materialize-sass'
 
 # Use Sass to process CSS
 gem "sassc-rails"

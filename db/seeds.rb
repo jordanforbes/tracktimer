@@ -7,13 +7,13 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require "faker"
 
-10.times do
-  name = Faker::Name.female_first_name
-  email = Faker::Internet.email
-  users = User.new(
-    name: ,
-    email: ,
-  )
-  users.save
-  # User.create(name: Faker::Name.capitalize, email: Faker::email)
-end
+# 10.times do
+#   name = Faker::Name.female_first_name
+#   email = Faker::Internet.email
+#   users = User.new(
+#     name: ,
+#     email: ,
+#   )
+#   users.save
+#   # User.create(name: Faker::Name.capitalize, email: Faker::email)
+# end
